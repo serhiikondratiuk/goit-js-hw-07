@@ -1,5 +1,3 @@
-// const inputEl = document.querySelector('input');
-// console.log(inputEl);
 const refs = {
  controlsEl: document.querySelector('#controls'),
  boxesEL: document.querySelector('#boxes'),
@@ -22,11 +20,12 @@ let counter = 10;
 function createBoxes(amount) {
  const divsOnBox = refs.boxesEL.children.length;
  amount = refs.inputEl.value - 1;
+ console.log(amount);
  const newBox = document.createElement('div');
  refs.boxesEL.append(newBox);
- counter += 10;
  newBox.style.width = `${20 + counter}px`;
  newBox.style.height = `${20 + counter}px`;
+ counter += 10;
  newBox.style.backgroundColor = randomColor();
  if (divsOnBox < amount && amount !== 0) {
   createBoxes();
