@@ -14,7 +14,7 @@ const images = [
 ];
 const galleryEl = document.querySelector('#gallery');
 const newGallery = images.map(
- image =>
-  `<li><img class='image' src ='${image.url}' alt='${image.alt}' width='500' height='100%'></li>`,
+ ({ url, alt }) =>
+  `<li><img class='image' src ='${url}' alt='${alt}' width='500' height='100%'></li>`,
 );
 galleryEl.insertAdjacentHTML('beforeend', newGallery.join(''));
