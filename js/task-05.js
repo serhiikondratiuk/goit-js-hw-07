@@ -5,7 +5,7 @@ const refs = {
 
 refs.inputEl.addEventListener('input', event => {
  refs.outputEl.textContent = event.currentTarget.value;
- if (refs.outputEl.textContent.length === 0) {
+ if (!refs.outputEl.textContent.length) {
   refs.outputEl.textContent = 'незнакомец';
  }
 });
