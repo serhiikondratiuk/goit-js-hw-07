@@ -15,3 +15,22 @@ function onBlurValidation() {
   toggleClass('valid', 'invalid');
  }
 }
+// const refs = {
+//  input: document.querySelector('#validation-input'),
+// };
+
+// let inputValue = refs.input.value.length;
+// const dataLength = +refs.input.dataset.length;
+
+// console.log(inputValue);
+// console.log(dataLength);
+
+// refs.input.addEventListener('blur', () => {
+//  if (inputValue != dataLength) {
+//   refs.input.classList.add('invalid');
+//   refs.input.classList.remove('valid');
+//  } else {
+//   refs.input.classList.remove('invalid');
+//   refs.input.classList.add('valid');
+//  }
+// });
